@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import useInput from '../../hooks/use-input'
 import SearchInput from '../../components/search-input'
-import ChannelInfoCard from '../../components/channel-info-card'
+import ChannelInfoCard from '../../components/video-info-card'
 import { getVideoId } from '../../utils/video-id'
 import { getVideoInfo } from '../../apis/video-info'
 
@@ -32,10 +32,10 @@ const Home = () => {
   return (
     <div>
       <main role="main" className="px-3">
-        <h1>Youtube Creator를 위한 댓글 추첨 사이트</h1>
+        <h1 className="mb-5">Youtube Creator를 위한 댓글 추첨 사이트</h1>
         <SearchInput inputEvent={inputEvent} handleClick={handleClick} handlePress={handlePress} />
       </main>
-      {cardVisible && <ChannelInfoCard iframSrc={iframSrc} videoInfo={videoInfo} />}
+      {cardVisible && <ChannelInfoCard videoId={iframSrc} videoInfo={videoInfo} />}
     </div>
   )
 }
