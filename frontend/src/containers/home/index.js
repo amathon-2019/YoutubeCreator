@@ -1,20 +1,23 @@
 import React from 'react'
+import SearchInput from '../../components/search-input'
 
 const Home = () => {
   return (
     <div>
-      <main role="main" class="px-3">
-        <h1>Cover your page.</h1>
-        <p class="lead">
-          Cover is a one-page template for building simple and beautiful home pages. Download, edit
-          the text, and add your own fullscreen background photo to make it your own.
-        </p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary font-weight-bold border-white bg-white">
-            Learn more
-          </a>
-        </p>
+      <main role="main" className="px-3">
+        <h1>
+          Youtube Creator를 위한 <p>댓글 추첨 사이트</p>
+        </h1>
+        <SearchInput />
       </main>
+      <iframe
+        id="player"
+        type="text/html"
+        width="640"
+        height="360"
+        src="http://www.youtube.com/embed/m32r3atf1rU?enablejsapi=1"
+        frameborder="0"
+      ></iframe>
     </div>
   )
 }
