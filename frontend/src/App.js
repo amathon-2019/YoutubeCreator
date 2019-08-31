@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Provider } from 'react-redux'
+import Alert from 'react-s-alert'
 import store from './store'
 import './App.css'
 import Navigation from './components/navigation'
@@ -28,6 +29,7 @@ function App() {
           </Provider>
         </BrowserRouter>
       </div>
+      <Alert stack={true} timeout={3000} />
     </div>
   )
 }

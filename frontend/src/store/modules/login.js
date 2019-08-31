@@ -1,8 +1,8 @@
 import { createAction, handleActions } from 'redux-actions'
 
 // 액션 타입을 정의해줍니다.
-const LOGIN = 'auth/LOGIN'
-const LOGOUT = 'auth/LOGOUT'
+export const LOGIN = 'auth/LOGIN'
+export const LOGOUT = 'auth/LOGOUT'
 
 export const login = createAction(LOGIN)
 export const logout = createAction(LOGOUT)
