@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { NavLink } from 'react-router-dom'
+import Alert from 'react-s-alert'
 import youtube_config from '../../youtube_config.json'
 import { LOGOUT } from '../../store/modules/login'
 
@@ -14,6 +15,11 @@ const Navigation = () => {
       window.location.href = url
     } else {
       console.log('로그아웃')
+      Alert.success('<h4>로그아웃<h4>', {
+        position: 'top-right',
+        effect: 'slide',
+        html: true,
+      })
       dispatch({ type: LOGOUT })
     }
   }
