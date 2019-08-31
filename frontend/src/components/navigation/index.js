@@ -16,7 +16,7 @@ const Navigation = () => {
           <NavLink className="nav-link" activeClassName="active" exact={true} to="/">
             Home
           </NavLink>
-          <NavLink className="nav-link" activeClassName="active" exact={true} to="/login">
+          <NavLink className="nav-link" activeClassName="active" exact={true} to="/mypage">
             My page
           </NavLink>
           <div className="nav-link" onClick={openOAuthPage}>
