@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 import youtube_config from '../../youtube_config.json'
 import { LOGOUT } from '../../store/modules/login'
 
-const Navigation = ({ history }) => {
+const Navigation = () => {
   const dispatch = useDispatch()
   const { login } = useSelector(state => state.login)
   const openOAuthPage = () => {

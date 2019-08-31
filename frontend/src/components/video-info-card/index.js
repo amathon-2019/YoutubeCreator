@@ -1,7 +1,7 @@
 import React from 'react'
 import InfoInput from './info-input'
 
-const ChannelInfoCard = ({ iframSrc, videoInfo }) => {
+const ChannelInfoCard = ({ videoId, videoInfo }) => {
   return (
     <div className="card mb-4 shadow-sm mx-auto cover-container">
       <div className="card-header">
@@ -10,7 +10,7 @@ const ChannelInfoCard = ({ iframSrc, videoInfo }) => {
           type="text/html"
           width="640"
           height="360"
-          src={`http://www.youtube.com/embed/${iframSrc}?enablejsapi=1`}
+          src={`http://www.youtube.com/embed/${videoId}?enablejsapi=1`}
           frameBorder="0"
         />
       </div>

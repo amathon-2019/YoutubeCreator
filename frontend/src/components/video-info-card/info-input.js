@@ -7,7 +7,7 @@ const InfoInput = () => {
         <h3>
           <label for="exampleFormControlSelect1">추첨인원</label>
         </h3>
-        <select multiple class="form-control w-50 mx-auto" id="exampleFormControlSelect1">
+        <select multiple className="form-control w-50 mx-auto" id="exampleFormControlSelect1">
           <option>1</option>
           <option>2</option>
           <option>3</option>
