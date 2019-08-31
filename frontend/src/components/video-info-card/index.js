@@ -14,7 +14,7 @@ const VideoInfoCard = ({ videoId, videoInfo, onClick }) => {
           frameBorder="0"
         />
       </div>
-      <div className="card-body text-primary">
+      <div className="card-body text-secondary">
         <h3>영상정보</h3>
         <ul className="list-unstyled mt-3 mb-4">
           <li>View: {videoInfo ? videoInfo.viewCount : 0}</li>

@@ -6,6 +6,7 @@ import DrawList from '../../components/draw-list'
 import { getVideoId } from '../../utils/video-id'
 import { getVideoInfo } from '../../apis/video-info'
 import { getVideoComment } from '../../apis/video-comment'
+import { getThumbnail } from '../../apis/thumbnail'
 
 const Home = () => {
   const inputEvent = useInput('')
@@ -36,7 +37,14 @@ const Home = () => {
   const getComments = async () => {
     const response = await getVideoComment(iframSrc, 3)
     if (response) {
-      setDrawList(response)
+      const nextDrawList = await response.map(item => {
+        return {
+          name: item.authorName,
+          // thumbnail: getThumbnail(item.authorId).then(data => data),
+        }
+      })
+      await console.log(nextDrawList)
+      setDrawList(nextDrawList)
     }
   }
   return (

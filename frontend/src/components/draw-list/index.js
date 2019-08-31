@@ -2,11 +2,11 @@ import React from 'react'
 
 const DrawList = ({ drawList }) => {
   return (
-    <div>
+    <div className="cover-container mx-auto text-secondary">
       <ul className="list-group">
-        {drawList.map(item => (
-          <li className="list-group-item">{item.authorName}</li>
-        ))}
+        {drawList.map(item => {
+          return <li className="list-group-item">{item.name}</li>
+        })}
       </ul>
     </div>
   )
