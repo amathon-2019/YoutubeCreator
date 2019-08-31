@@ -4,8 +4,9 @@
 - **GET** `/video/{videoId}/comments?limit={limit}`
     - limit: 추첨할 댓글 개수
 - response
-    - 댓글 게시한 시간 (`items[x].snippet.topLevelComment.snippet.publishedAt`)
-    - 좋아요 count (`items[x].snippet.topLevelComment.snippet.likeCount`) 등
+    - authorId: 댓글 게시자의 id (channelId)
+    - order: 댓글 단 순서 (숫자가 작을 수록 나중에 댓글을 단 것)
+    - totalPoint: 댓글 단 순서와 좋아요 수로 계산한 총점
     - 예시
         ```json
         [
