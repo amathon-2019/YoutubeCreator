@@ -6,6 +6,7 @@ import Footer from './components/footer'
 import Home from './containers/home'
 import Login from './containers/login'
 import NotFound from './containers/not-found'
+import Mypage from './containers/mypage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/login" component={Login} />
+            <Route exact path="/mypage" component={Mypage} />
             <Route component={NotFound} />
             <Home />
           </Switch>

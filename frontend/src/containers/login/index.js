@@ -8,7 +8,7 @@ const Login = ({ location, history }) => {
     const response = await getAccessToken(query.code)
     if (response) {
       console.log(response)
-      history.push('/')
+      history.push('/mypage')
     } else {
       history.push('/')
     }
