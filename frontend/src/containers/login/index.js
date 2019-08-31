@@ -4,6 +4,7 @@ import queryString from 'query-string'
 import Alert from 'react-s-alert'
 import { getAccessToken } from '../../apis/access-token'
 import { LOGIN, LOGOUT } from '../../store/modules/login'
+
 const Login = ({ location, history }) => {
   const dispatch = useDispatch()
   function isEmpty(map) {
@@ -24,8 +25,8 @@ const Login = ({ location, history }) => {
       dispatch({ type: LOGIN })
       history.push('/mypage')
     } else {
-      console.log('로그아웃')
-      Alert.success('<h4>로그아웃<h4>', {
+      console.log('로그인 실패')
+      Alert.error('<h4>로그인 실패<h4>', {
         position: 'top-right',
         effect: 'slide',
         html: true,
