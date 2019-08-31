@@ -30,9 +30,10 @@ public class VideoController {
 	 * 해당 객체들을 List 형태로 return한다.
 	 */
 	@GetMapping("/{videoId}/comments")
-	// TODO: 몇명까지 추첨할 것인지 입력값 받아서 그 개수만큼만 list에 담아서 리턴
 	public List<CommentThreadsResponse> getComments(
-		@PathVariable("videoId") String videoId) {
+		@PathVariable("videoId") String videoId,
+		@RequestParam(value = "limit", required = false) Integer limit) {
+		log.info("limit: " + limit);
 
 		List<CommentThreadsResponse> commentThreadsResponses = videoService.getTotalCommentThreadsBy(videoId);
 		Collections.sort(commentThreadsResponses);
@@ -40,11 +41,12 @@ public class VideoController {
 		String originalChannelId = videoService.getChannelIdByVideoId(videoId);
 		videoService.filterUnsubscribedCommentAuthor(commentThreadsResponses, originalChannelId);
 
-		// TODO: videoService.() 메소드를 사용하여,
-		//  해당 채널을 구독하지 않은 사람 체크 후 remove
-
 		// TODO: 추첨할 기준을 직접 선정하는 기능. 해당 기준 및 가중치를 입력값으로 받아서 계산
 
+
+		if (limit != null && limit > 0) {
+			return commentThreadsResponses.subList(0, limit);
+		}
 		return commentThreadsResponses;
 	}
 }
