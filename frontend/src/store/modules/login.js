@@ -16,13 +16,13 @@ export default handleActions(
     [LOGIN]: (state, action) => {
       if (!state.login) {
         return { login: true }
-      } else alert('로그인 과정에서 에러가 발생했습니다.')
+      }
     },
     [LOGOUT]: (state, action) => {
       if (state.login) {
         sessionStorage.clear()
         return { login: false }
-      } else alert('로그아웃 과정에서 에러가 발생했습니다.')
+      }
     },
   },
   initialState,
