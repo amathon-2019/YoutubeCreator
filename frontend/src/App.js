@@ -4,6 +4,7 @@ import './App.css'
 import Navigation from './components/navigation'
 import Footer from './components/footer'
 import Home from './containers/home'
+import Login from './containers/login'
 import NotFound from './containers/not-found'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Navigation />
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route exact path="/login" component={Login} />
             <Route component={NotFound} />
             <Home />
           </Switch>
