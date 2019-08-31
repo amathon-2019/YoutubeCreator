@@ -7,7 +7,7 @@ import Home from './containers/home'
 function App() {
   return (
     <div className="App w-100 h-100">
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div className="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <Navigation />
         <Home />
         <Footer />
