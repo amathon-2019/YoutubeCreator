@@ -1,7 +1,7 @@
 import React from 'react'
 import InfoInput from './info-input'
 
-const ChannelInfoCard = ({ videoId, videoInfo }) => {
+const VideoInfoCard = ({ videoId, videoInfo, onClick }) => {
   return (
     <div className="card mb-4 shadow-sm mx-auto cover-container">
       <div className="card-header">
@@ -14,7 +14,7 @@ const ChannelInfoCard = ({ videoId, videoInfo }) => {
           frameBorder="0"
         />
       </div>
-      <div className="card-body text-primary">
+      <div className="card-body text-secondary">
         <h3>영상정보</h3>
         <ul className="list-unstyled mt-3 mb-4">
           <li>View: {videoInfo ? videoInfo.viewCount : 0}</li>
@@ -22,7 +22,7 @@ const ChannelInfoCard = ({ videoId, videoInfo }) => {
           <li>Comments: {videoInfo ? videoInfo.commentCount : 0}</li>
         </ul>
         <InfoInput />
-        <button type="button" className="btn btn-lg btn-block btn-primary">
+        <button type="button" className="btn btn-lg btn-block btn-primary" onClick={onClick}>
           댓글 추첨
         </button>
       </div>
@@ -30,4 +30,4 @@ const ChannelInfoCard = ({ videoId, videoInfo }) => {
   )
 }
 
-export default ChannelInfoCard
+export default VideoInfoCard
