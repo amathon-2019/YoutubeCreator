@@ -256,3 +256,25 @@
 - YouTube API 호출 예시
     - `https://www.googleapis.com/youtube/v3/subscriptions?key={DEVELOPER_API_KEY}&part=snippet&maxResults=2&channelId=UCHpIHu4LzmNuD8bsE6mZLSA`
 - [YouTube API 참조 문서](https://developers.google.com/youtube/v3/docs/subscriptions/list)
+
+
+
+### 어떤 댓글 게시자가 특정 channel에 얼마나 자주 댓글을 남겼는지
+- *holding* 상태
+- **GET** `/channel/{channelId}/replies/...`
+- response
+    - 예시
+        ```json
+        {
+         "items": [
+          {
+           "authorChannelId": "dfsdf",
+           "replyCount": 28
+          },
+          {
+           "authorChannelId": "dfsdf",
+           "replyCount": 2
+          }
+         ]
+        }
+        ```
