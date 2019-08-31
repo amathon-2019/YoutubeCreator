@@ -9,5 +9,5 @@ public class VideoResponseItem {
 
 	private String kind;
 	private String id;
-	private VideoResponseItemSnippet snippets;
+	private VideoResponseItemSnippet snippet;
 }

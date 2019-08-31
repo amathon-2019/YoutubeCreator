@@ -32,14 +32,13 @@ public class VideoController {
 	@GetMapping("/{videoId}/comments")
 	// TODO: 몇명까지 추첨할 것인지 입력값 받아서 그 개수만큼만 list에 담아서 리턴
 	public List<CommentThreadsResponse> getComments(
-		@PathVariable("videoId") String videoId/*,
-		@RequestParam(value = "", required = false) int count*/) {
+		@PathVariable("videoId") String videoId) {
 
 		List<CommentThreadsResponse> commentThreadsResponses = videoService.getTotalCommentThreadsBy(videoId);
 		Collections.sort(commentThreadsResponses);
 
-		String channelId = videoService.getChannelInfoByVideoId(videoId);
-
+		String originalChannelId = videoService.getChannelIdByVideoId(videoId);
+		videoService.filterUnsubscribedCommentAuthor(commentThreadsResponses, originalChannelId);
 
 		// TODO: videoService.() 메소드를 사용하여,
 		//  해당 채널을 구독하지 않은 사람 체크 후 remove

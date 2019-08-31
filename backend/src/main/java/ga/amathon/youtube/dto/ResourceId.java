@@ -5,9 +5,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class SubscriptionItem {
+public class ResourceId {
 
-	private String kind;
-	private SubscriptionItemSnippet snippet;
+	private String channelId;
 }
-
