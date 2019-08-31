@@ -1,7 +1,8 @@
 # YouTube API Info
 
 ### 특정 video의 comments list 가져오기
-- **GET** `/video/{videoId}/comments`
+- **GET** `/video/{videoId}/comments?limit={limit}`
+    - limit: 추첨할 댓글 개수
 - response
     - 댓글 게시한 시간 (`items[x].snippet.topLevelComment.snippet.publishedAt`)
     - 좋아요 count (`items[x].snippet.topLevelComment.snippet.likeCount`) 등
