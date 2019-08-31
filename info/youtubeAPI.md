@@ -8,81 +8,30 @@
     - 좋아요 count (`items[x].snippet.topLevelComment.snippet.likeCount`) 등
     - 예시
         ```json
-        {
-         "kind": "youtube#commentThreadListResponse",
-         "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/r4TasDyQimfOCWO3ZoNRnRgaweI\"",
-         "nextPageToken": "QURTSl9pMjc1ZWRTQXQ1VGc1T21UUHUydU8tTUYzNEN6cUVnSnNaWF9kSWlsMVhLY2t6V2g3b3NIX1N5LUgyOGdZWG9xRjROQnNxellaS2NLSTA4NXBPR09zME9HeFZMTi1rV0xPZk5TSk42Sld6WWZTaVY5WjRfYk5oRlduY29YQ2c=",
-         "pageInfo": {
-          "totalResults": 2,
-          "resultsPerPage": 2
-         },
-         "items": [
-          {
-           "kind": "youtube#commentThread",
-           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/_E6hSMN2cD0o8nBqHhq46MrqDAo\"",
-           "id": "UgzBeUeo0Esc5WIz8SZ4AaABAg",
-           "snippet": {
-            "videoId": "s-JNT4VInH8",
-            "topLevelComment": {
-             "kind": "youtube#comment",
-             "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/5_VdOALnBsg4rVROclJT3f7_2zc\"",
-             "id": "UgzBeUeo0Esc5WIz8SZ4AaABAg",
-             "snippet": {
-              "authorDisplayName": "Michaela미카엘라",
-              "authorProfileImageUrl": "https://yt3.ggpht.com/-vZZ8LtZ3v24/AAAAAAAAAAI/AAAAAAAAAAA/1oZ7BwGlyyQ/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
-              "authorChannelUrl": "http://www.youtube.com/channel/UCw1is4lJmjPGdU1jr9QMhBA",
-              "authorChannelId": {
-               "value": "UCw1is4lJmjPGdU1jr9QMhBA"
-              },
-              "videoId": "s-JNT4VInH8",
-              "textDisplay": "차니찬님 코드로 저렴히 구매할 수 있게되서 기뻐요ㅠㅠ\n근데 사고자하는 네코가 10일 후 입고라ㅠㅠ코드사용 종료될까 무섭네유",
-              "textOriginal": "차니찬님 코드로 저렴히 구매할 수 있게되서 기뻐요ㅠㅠ\n근데 사고자하는 네코가 10일 후 입고라ㅠㅠ코드사용 종료될까 무섭네유",
-              "canRate": true,
-              "viewerRating": "none",
-              "likeCount": 0,
-              "publishedAt": "2019-08-31T05:46:19.000Z",
-              "updatedAt": "2019-08-31T05:46:19.000Z"
-             }
+        [
+            {
+                "authorId": "UCjD-oOu2vYr6ECsTfkjsPmQ",
+                "authorName": "노영준",
+                "order": 317,
+                "likeCount": 853,
+                "totalPoint": 1625.8999999999999
             },
-            "canReply": true,
-            "totalReplyCount": 0,
-            "isPublic": true
-           }
-          },
-          {
-           "kind": "youtube#commentThread",
-           "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/QfXzk53wWiIqRegOeSPy9YCsyCk\"",
-           "id": "UgzRTrGWNjYMPf1G2lt4AaABAg",
-           "snippet": {
-            "videoId": "s-JNT4VInH8",
-            "topLevelComment": {
-             "kind": "youtube#comment",
-             "etag": "\"8jEFfXBrqiSrcF6Ee7MQuz8XuAM/3hs719qF3FDNmCVSCk-v_MSGEts\"",
-             "id": "UgzRTrGWNjYMPf1G2lt4AaABAg",
-             "snippet": {
-              "authorDisplayName": "먐먐미",
-              "authorProfileImageUrl": "https://yt3.ggpht.com/-I--IeOA5gZo/AAAAAAAAAAI/AAAAAAAAAAA/WUTJsTS5YE0/s28-c-k-no-mo-rj-c0xffffff/photo.jpg",
-              "authorChannelUrl": "http://www.youtube.com/channel/UCVGpbj40FxRFCuhWPA6s_vQ",
-              "authorChannelId": {
-               "value": "UCVGpbj40FxRFCuhWPA6s_vQ"
-              },
-              "videoId": "s-JNT4VInH8",
-              "textDisplay": "우툴렐레도 음이 부족해서.. 표현에 한계가 있다고 느꼈는데 칼림바도 심할까요?",
-              "textOriginal": "우툴렐레도 음이 부족해서.. 표현에 한계가 있다고 느꼈는데 칼림바도 심할까요?",
-              "canRate": true,
-              "viewerRating": "none",
-              "likeCount": 0,
-              "publishedAt": "2019-08-31T01:37:42.000Z",
-              "updatedAt": "2019-08-31T01:37:42.000Z"
-             }
+            {
+                "authorId": "UC6dVegRJ5k0oMgvedwEqlIA",
+                "authorName": "J1",
+                "order": 334,
+                "likeCount": 634,
+                "totalPoint": 1395.4
             },
-            "canReply": true,
-            "totalReplyCount": 0,
-            "isPublic": true
-           }
-          }
-         ]
-        }
+            {
+                "authorId": "UCeZMTIsoOlh4hMlbdkKRkLg",
+                "authorName": "보기자세히",
+                "order": 234,
+                "likeCount": 747,
+                "totalPoint": 1341
+            },
+            ...
+        ]
         ```
 - YouYube API 호출 예시
     - `https://www.googleapis.com/youtube/v3/commentThreads?key={DEVELOPER_API_KEY}&part=snippet&maxResults=7&videoId=s-JNT4VInH8&textFormat=plainText`
